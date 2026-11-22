@@ -22,6 +22,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: read
+      id-token: write
     steps:
       - if: github.ref == 'refs/heads/main'
         uses: int128/aws-kms-github-app-token-action@244b9e7f5e76581cdb9310748263980b9da63f8a # v0.3.0
