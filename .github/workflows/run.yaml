@@ -25,7 +25,7 @@ jobs:
       id-token: write
     steps:
       - if: github.ref == 'refs/heads/main'
-        uses: int128/aws-kms-github-app-token-action@244b9e7f5e76581cdb9310748263980b9da63f8a # v0.3.0
+        uses: int128/aws-kms-github-app-token-action@c9b59687f3225bc01678db8f232b3a0b9efde688 # v0.6.0
         id: app-token
         with:
           role-to-assume: ${{ secrets.APP_AWS_IAM_ROLE_ARN }}
